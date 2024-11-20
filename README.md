@@ -1,1 +1,1 @@
-# Updating Tailwind-CSS is in progress
+# Tailwind-CSS
