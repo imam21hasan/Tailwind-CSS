@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Binary Bird</title>
+    <link
+      rel="shortcut icon"
+      href="https://cdn-icons-png.flaticon.com/128/18319/18319753.png"
+    />
+
+    <script type="module" crossorigin src="assets/index-DAKhFkrW.js"></script>
+    <link rel="stylesheet" crossorigin href="assets/index-C0hxyzX8.css" />
+  </head>
+  <body class="h-full bg-red-100">
+    <header class="bg-blue-200 w-full m-0 p-4 relative sm:p-1">
+      <nav class="flex justify-between items-center sm:pl-6 sm:p-2">
+        <a
+          class="order-2 sm:order-1 w-11 min-h-12 sm:w-36 sm:h-16"
+          href="/index.html"
+          ><img
+            class="sm:w-16 sm:h-16 sm:transform sm:transition-transform sm:duration-1000 sm:ease-in-out sm:hover:translate-x-[100%]"
+            src="data:image/png;base64,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"
+            alt=""
+        /></a>
+        <div class="order-1 sm:order-2 sm:w-2/3 lg:w-1/2">
+          <button id="menu-icon" class="sm:hidden">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.8"
+              stroke="currentColor"
+              class="size-7"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+              />
+            </svg>
+          </button>
+          <ul
+            id="menu-bar"
+            class="w-36 sm:w-full lg:w-full bg-black pl-2 pr-2 rounded-r-md absolute left-0 top-14 hidden sm:relative sm:top-0 sm:flex sm:justify-evenly sm:p-2 sm:bg-[#F79F1F] sm:rounded-ss-3xl"
+          >
+            <li
+              class="p-1 pl-3 mt-2 mb-2 text-left rounded-md border-2 border-black hover:border-white hover:text-center sm:border-[#F79F1F] sm:hover:bg-violet-500 sm:mt-0"
+            >
+              <a
+                class="home text-white font-bold sm:text-xl sm:pl-2 sm:pr-2"
+                href=""
+                >Home</a
+              >
+            </li>
+            <li
+              class="p-1 pl-3 mb-2 text-left rounded-md border-2 border-black hover:border-white hover:text-center sm:border-[#F79F1F] sm:hover:bg-violet-500"
+            >
+              <a
+                class="about text-white font-bold sm:text-xl sm:pl-2 sm:pr-2"
+                href=""
+                >About</a
+              >
+            </li>
+            <li
+              class="p-1 pl-3 mb-2 text-left rounded-md border-2 border-black hover:border-white hover:text-center sm:border-[#F79F1F] sm:hover:bg-violet-500"
+            >
+              <a
+                class="skill text-white font-bold sm:text-xl sm:pl-2 sm:pr-2"
+                href=""
+                >Skills</a
+              >
+            </li>
+            <li
+              class="p-1 pl-3 mb-2 text-left rounded-md border-2 border-black hover:border-white hover:text-center sm:border-[#F79F1F] sm:hover:bg-violet-500"
+            >
+              <a
+                class="contact text-white font-bold sm:text-xl sm:pl-2 sm:pr-2"
+                href=""
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <section class="w-[100%] h-[100%] mt-14 flex justify-center items-center">
+      <div
+        id="container-home"
+        class="w-[70%] h-[70%] bg-violet-500 m-12 p-5 border-2 border-violet-500 rounded-xl sm:rounded-ss-full"
+      >
+        <div
+          class="profile-container w-[100%] h-[100%] p-16 flex flex-col justify-center items-center"
+        >
+          <div
+            class="image w-[200px] h-[200px] border-[4px] border-[#EE5A24] rounded-full bg-green-500 text-center hover:flex hover:justify-center"
+          >
+            <img
+              class="w-full h-full rounded-full cursor-pointer transform transition-transform duration-1000 ease-in-out hover:translate-y-[-30%]"
+              src="assets/profile-aVaJNjJu.jpg"
+              alt=""
+            />
+          </div>
+          <div class="addressing text-center text-white mt-6">
+            <h1 class="font-bold text-lg sm:text-xl lg:text-3xl">
+              Welcome to BinaryBird's Profile
+            </h1>
+          </div>
+        </div>
+      </div>
+      <div
+        id="container-about"
+        class="hidden w-[70%] h-[70%] bg-violet-500 m-12 p-5 border-2 border-violet-500 rounded-xl"
+      >
+        <h1 class="text-white text-left text-lg font-bold">
+          I'm Imam Hasan Shawon, a passionate developer and tech enthusiast
+          dedicated to creating innovative and efficient solutions through code
+          with a strong foundation in C, C++, Java, JavaScript, HTML, CSS,
+          Tailwind CSS, Android Studio. I love tackling complex problems and
+          transforming ideas into reality.<br /><br />
+          <span class="text-red-400 text-2xl"
+            >Contact me if you need to know more about me.</span
+          >
+        </h1>
+      </div>
+      <div
+        id="container-skills"
+        class="hidden w-[70%] h-[70%] bg-violet-500 m-12 p-5 sm:p-10 border-2 border-violet-500 rounded-xl flex justify-evenly items-center flex-wrap gap-5 lg:gap-x-14"
+      >
+        <div class="c imgC">
+          <img
+            class="imgD"
+            src="https://cdn.worldvectorlogo.com/logos/c-1.svg"
+            alt=""
+          />
+          <a
+            class="text"
+            href="https://github.com/imam21hasan/Data-Structure"
+            onclick="lookSkills('c')"
+            >C</a
+          >
+        </div>
+        <div class="cpp imgC">
+          <img
+            class="imgD"
+            src="https://cdn.worldvectorlogo.com/logos/c.svg"
+            alt=""
+          />
+          <a
+            class="text"
+            href="https://github.com/imam21hasan/OOP/tree/main/OOP%20C%2B%2B"
+            onclick="lookSkills('cpp')"
+            >C++</a
+          >
+        </div>
+        <div class="java imgC">
+          <img
+            class="imgD"
+            src="https://cdn.worldvectorlogo.com/logos/java-14.svg"
+            alt=""
+          />
+          <a
+            class="text"
+            href="https://github.com/imam21hasan/OOP/tree/main/OOP%20Java"
+            onclick="lookSkills('java')"
+            >Java</a
+          >
+        </div>
+        <div class="html-1 imgC">
+          <img
+            class="imgD"
+            src="https://cdn.worldvectorlogo.com/logos/html-1.svg"
+            alt=""
+          />
+          <a
+            class="text"
+            href="https://github.com/imam21hasan/HTML-CSS"
+            onclick="lookSkills('html')"
+            >HTML</a
+          >
+        </div>
+        <div class="css imgC">
+          <img
+            class="imgD"
+            src="https://cdn.worldvectorlogo.com/logos/css-3.svg"
+            alt=""
+          />
+          <a
+            class="text"
+            href="https://github.com/imam21hasan/HTML-CSS"
+            onclick="lookSkills('css')"
+            >CSS</a
+          >
+        </div>
+        <div class="js imgC">
+          <img
+            class="imgD"
+            src="https://cdn.worldvectorlogo.com/logos/javascript-1.svg"
+            alt=""
+          />
+          <a
+            class="text"
+            href="https://github.com/imam21hasan/JavaScript"
+            onclick="lookSkills('js')"
+            >JavaScript</a
+          >
+        </div>
+        <div class="tailwind imgC">
+          <img
+            class="imgD"
+            src="https://cdn.worldvectorlogo.com/logos/tailwind-css-2.svg"
+            alt=""
+          />
+          <a
+            class="text text-[17px]"
+            href="https://github.com/imam21hasan/Tailwind-CSS/blob/main/README.md"
+            onclick="lookSkills('tw')"
+            >Tailwind CSS</a
+          >
+        </div>
+        <div class="android imgC">
+          <img
+            class="imgD"
+            src="https://cdn.worldvectorlogo.com/logos/android-6.svg"
+            alt=""
+          />
+          <a
+            class="text text-[15px]"
+            href="https://github.com/imam21hasan/Android-Studio/blob/main/README.md"
+            onclick="lookSkills('andro')"
+            >Android Studio</a
+          >
+        </div>
+      </div>
+      <div
+        id="container-contact"
+        class="hidden w-[70%] h-[70%] bg-violet-500 m-12 p-5 sm:p-10 border-2 border-violet-500 rounded-xl flex justify-evenly items-center flex-wrap gap-5 lg:gap-x-14"
+      >
+        <div class="github imgC">
+          <img
+            class="imgD"
+            src="https://cdn.worldvectorlogo.com/logos/github-icon-1.svg"
+            alt=""
+          />
+          <a
+            class="text"
+            href="https://github.com/imam21hasan"
+            onclick="reachMe('github')"
+            >GitHub</a
+          >
+        </div>
+        <div class="linked imgC">
+          <img
+            class="imgD"
+            src="https://cdn.worldvectorlogo.com/logos/linkedin-icon-3.svg"
+            alt=""
+          />
+          <a
+            class="text"
+            href="https://www.linkedin.com/in/imam-hasan-shawon-62a961337/"
+            onclick="reachMe('linkedIn')"
+            >LinkedIn</a
+          >
+        </div>
+        <div class="gmail imgC">
+          <img
+            class="imgD"
+            src="https://cdn.worldvectorlogo.com/logos/official-gmail-icon-2020-.svg"
+            alt=""
+          />
+          <a
+            class="text"
+            href="https://www.ihshawon216@gmail.com"
+            onclick="reachMe('gmail')"
+            >Gmail</a
+          >
+        </div>
+        <div class="x imgC">
+          <img
+            class="imgD"
+            src="https://cdn.worldvectorlogo.com/logos/x-2.svg"
+            alt=""
+          />
+          <a class="text" href="" onclick="reachMe('x')">X</a>
+        </div>
+        <div class="fb imgC">
+          <img
+            class="imgD"
+            src="https://cdn.worldvectorlogo.com/logos/facebook-2020-2-1.svg"
+            alt=""
+          />
+          <a
+            class="text"
+            href="https://www.facebook.com/I.H.SHAWONcstuBinaryBird"
+            onclick="reachMe('fb')"
+            >Facebook</a
+          >
+        </div>
+        <div class="telegram imgC">
+          <img
+            class="imgD"
+            src="https://cdn.worldvectorlogo.com/logos/telegram.svg"
+            alt=""
+          />
+          <a
+            class="text"
+            href="https://t.me/IH_Shawon28"
+            onclick="reachMe('telegram')"
+            >Telegram</a
+          >
+        </div>
+        <div class="whatsApp imgC">
+          <img
+            class="imgD"
+            src="https://cdn.worldvectorlogo.com/logos/whatsapp-8.svg"
+            alt=""
+          />
+          <a
+            class="text"
+            href="https://wa.me/1845995310
+          "
+            onclick="reachMe('whatsApp')"
+            >WhatsApp</a
+          >
+        </div>
+        <div class="instagram imgC">
+          <img
+            class="imgD"
+            src="https://cdn.worldvectorlogo.com/logos/instagram-2016-5.svg"
+            alt=""
+          />
+          <a class="text" href="" onclick="reachMe('instagram')">Instagram</a>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
