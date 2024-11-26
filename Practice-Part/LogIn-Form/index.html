@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LogIn Form</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <script type="module" crossorigin src="assets/index-EqM_W-cR.js"></script>
+    <link rel="stylesheet" crossorigin href="assets/index-CHCNIVW1.css">
+  </head>
+  <body
+    class="h-screen bg-custom bg-cover bg-center flex justify-center items-center"
+  >
+    <div
+      class="w-[75%] sm:w-[50%] sm:bg-yellow-300 lg:w-[50%] lg:bg-violet-300 p-5 border-2 border-green-300 rounded-md bg-green-300 backdrop-blur-2xl backdrop-filter opacity-65 text-center"
+    >
+      <h1 class="font-bold text-xl mb-2">Please Login to Continue</h1>
+      <div id="logForm" class="bg-white p-4 rounded-md mb-3">
+        <div class="w-full border border-gray-300 rounded-sm">
+          <nav class="w-full mb-3">
+            <ul class="flex justify-between">
+              <li
+                class="signIn w-[50%] p-3 border-t-2 border-green-700 cursor-pointer"
+              >
+                <a class="text-black font-bold" href="">Sign In</a>
+              </li>
+              <li
+                class="signUp w-[50%] p-3 border-t-2 border-green-700 bg-[#778ca3] cursor-pointer"
+              >
+                <a class="text-black font-bold" href="">Sign Up</a>
+              </li>
+            </ul>
+          </nav>
+          <form id="signIn" class="p-4 relative" action="">
+            <div>
+              <i
+                class="absolute top-[13%] translate-x-3 bg-gray-500 p-1 text-white rounded-full fa-regular fa-user"
+              ></i>
+              <input
+                class="w-full p-2 pl-11 mb-3 border-2 border-gray-500 rounded-md placeholder-black"
+                type="email"
+                placeholder="Username or email"
+              />
+            </div>
+            <div>
+              <i
+                class="absolute top-[39%] translate-x-3 text-gray-500 text-xl fa-solid fa-lock"
+              ></i>
+              <input
+                class="w-full p-2 pl-11 mb-3 border-2 border-gray-500 rounded-md placeholder-black"
+                type="password"
+                placeholder="Password"
+              />
+            </div>
+            <div class="flex mb-2">
+              <label class="w-[50%] text-left" for=""
+                ><input
+                  class="ml-1 mr-1"
+                  type="checkbox"
+                  name=""
+                  id=""
+                />Remember me</label
+              >
+              <label class="w-[50%] text-right" for=""
+                ><a
+                  class="forgotPass text-xs font-bold text-gray-500 hover:underline"
+                  href=""
+                  >Forgot password</a
+                ></label
+              >
+            </div>
+            <input
+              class="w-full p-2 text-white font-bold rounded-md bg-[#20bf6b] cursor-pointer"
+              type="submit"
+              value="Sign In"
+            />
+          </form>
+
+          <form id="signUp" class="hidden p-4 relative" action="">
+            <div>
+              <i
+                class="absolute text-gray-500 top-[13%] translate-x-4 fa-regular fa-envelope"
+              ></i>
+              <input
+                class="w-full p-2 pl-10 mb-3 border-2 border-gray-500 rounded-md placeholder-black"
+                type="email"
+                placeholder="E-mail"
+              />
+            </div>
+            <div>
+              <i
+                class="absolute text-gray-500 top-[35.5%] translate-x-4 fa-solid fa-lock"
+              ></i>
+              <input
+                class="w-full p-2 pl-10 mb-3 border-2 border-gray-500 rounded-md placeholder-black"
+                type="password"
+                placeholder="Password"
+              />
+            </div>
+            <div>
+              <i
+                class="absolute text-gray-500 top-[58.5%] translate-x-4 fa-solid fa-landmark"
+              ></i>
+              <input
+                class="w-full p-2 pl-10 mb-4 border-2 border-gray-500 rounded-md placeholder-black"
+                type="text"
+                placeholder="Institutes/Organization"
+              />
+            </div>
+            <input
+              class="w-full p-2 text-white font-bold rounded-md bg-[#20bf6b] cursor-pointer"
+              type="submit"
+              value="Sign Up"
+            />
+          </form>
+        </div>
+      </div>
+
+      <div id="resetPass" class="hidden bg-white p-4 rounded-md relative">
+        <p class="text-left font-bold mb-3">
+          <span class="text-red-700">*</span>Please enter your email address or
+          userHandle.
+        </p>
+        <div>
+          <i
+            class="absolute text-gray-500 top-[38.5%] lg:top-[32%] translate-x-4 fa-regular fa-envelope"
+          ></i>
+          <input
+            class="w-full p-2 pl-10 mb-3 border-2 border-gray-500 rounded-md placeholder-black"
+            type="email"
+            placeholder="Email"
+          />
+        </div>
+        <div class="text-left mb-3">
+          <a
+            class="backHome text-xs text-gray-500 font-bold hover:underline"
+            href=""
+            >Back to Login</a
+          >
+        </div>
+        <input
+          class="w-full p-2 mb-3 text-white font-bold rounded-md bg-[#20bf6b] cursor-pointer"
+          type="submit"
+          value="Reset Password"
+        />
+      </div>
+
+
+    </div>
+  </body>
+</html>
