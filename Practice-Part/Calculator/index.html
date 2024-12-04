@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+
+  <script type="module" crossorigin src="assets/index-Da8EC7GG.js"></script>
+  <link rel="stylesheet" crossorigin href="assets/index-DUuvRbyt.css">
+</head>
+<body class="m-0 p-0 box-border h-screen flex justify-center items-center">
+    <div class="bg-violet-500 w-[90%] max-w-md p-5 mt-8 rounded-lg shadow-lg">
+        <div class="py-3 mb-2">
+            <input type="text" id="result" class="w-full h-20 p-3 bg-white rounded-md text-right text-violet-700 text-4xl font-bold" disabled />
+        </div>
+        <div class="text-white font-bold mb-4 px-1"><span class="italic font-normal">fx</span>-991 ES plus</div>
+        <div id="btn" class="bg-black p-8 w-full grid grid-cols-4 gap-4 rounded-md">
+            <button class="design  border-red-500" onclick="clearDisplay()">AC</button>
+            <button class="design  border-red-500" onclick="deleteItem()">DEL</button>
+            <button class="design" onclick="btn('%')">%</button>
+            <button class="design" onclick="btn('/')">/</button>
+            <button class="design" onclick="btn('7')">7</button>
+            <button class="design" onclick="btn('8')">8</button>
+            <button class="design" onclick="btn('9')">9</button>
+            <button class="design" onclick="btn('*')">*</button>
+            <button class="design" onclick="btn('4')">4</button>
+            <button class="design" onclick="btn('5')">5</button>
+            <button class="design" onclick="btn('6')">6</button>
+            <button class="design" onclick="btn('-')">-</button>
+            <button class="design" onclick="btn('1')">1</button>
+            <button class="design" onclick="btn('2')">2</button>
+            <button class="design" onclick="btn('3')">3</button>
+            <button class="design" onclick="btn('+')">+</button>
+            <button class="design" onclick="btn('0')">0</button>
+            <button class="design" onclick="btn('00')">00</button>
+            <button class="design" onclick="btn('.')">.</button>
+            <button class="design  text-3xl border-blue-500" onclick="calculation()">=</button>
+        </div>
+    </div>
+</body>
+</html>
